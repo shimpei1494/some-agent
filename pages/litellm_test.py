@@ -25,7 +25,7 @@ if st.button("送信"):
             {"role": "user", "content": user_input},
         ]
         with st.spinner("回答生成中..."):
-            response = litellm_response(messages, selected_model_option)
+            response = litellm_response(messages, selected_model_option, False)
         st.write("## 回答のみ")
         st.write(response.choices[0].message.content)
         st.write("## リクエストのmessages")
