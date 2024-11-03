@@ -7,6 +7,7 @@ requires-python = ">=3.11"
 dependencies = [
     "litellm>=1.51.0",
     "openai>=1.52.2",
+    "py-zerox>=0.0.7",
     "python-dotenv>=1.0.1",
     "streamlit>=1.39.0",
 ]
